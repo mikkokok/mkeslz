@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mikko-connectivity",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mikko-connectivity",
+        "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
+        "DisplayName": "mikko-connectivity",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mikko-platform",
+        "ParentName": "mikko-platform",
+        "ParentDisplayName": "mikko-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/efe11bb6-65b4-4772-93d4-fcd6796530b9",
+            "Name": "efe11bb6-65b4-4772-93d4-fcd6796530b9",
+            "DisplayName": "mikkokok",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
