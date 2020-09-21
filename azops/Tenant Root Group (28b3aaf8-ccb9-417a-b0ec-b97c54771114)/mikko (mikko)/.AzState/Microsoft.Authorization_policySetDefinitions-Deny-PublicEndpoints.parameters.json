@@ -1,0 +1,64 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deny-PublicEndpoints",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Deny-Public-Endpoints-for-PaaS-Services",
+          "Parameters": {},
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "16044159720547053600",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-CosmosDB",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "7390644528189298206",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-MariaDB",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "12806970473119434648",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-MySQL",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "4991396477640391193",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-PostgreSql",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "11662040793827724763",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-KeyVault",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "17995200539288087289",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Sql",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "681574500380516910",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Storage",
+              "parameters": {}
+            },
+            {
+              "policyDefinitionReferenceId": "5985695588536247774",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-Aks",
+              "parameters": {}
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicEndpoints",
+        "ResourceName": "Deny-PublicEndpoints",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}

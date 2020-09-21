@@ -1,0 +1,483 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deploy-Diag-LogAnalytics",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+        "Properties": {
+          "Description": "This initiative configures application Azure resources to forward diagnostic logs and metrics to an Azure Log Analytics workspace.",
+          "DisplayName": "Deploy-Diag-LogAnalytics",
+          "Parameters": {
+            "logAnalytics": {
+              "metadata": {
+                "description": "Select the Log Analytics workspace from dropdown list",
+                "displayName": "Log Analytics workspace",
+                "strongType": "omsWorkspace"
+              },
+              "type": "String"
+            }
+          },
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "1101072304187588654",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-NIC",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17570785498463861332",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PowerBIEmbedded",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12846358223108291906",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-StreamAnalytics",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9824554157002498572",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ExpressRoute",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "15473612214531475819",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ACI",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12150813958583508551",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ACR",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14139821616946916538",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VirtualNetwork",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "8882171169142174777",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VM",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17907974388796950492",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VMSS",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "15412277286855548253",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-VNetGW",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6609862757245615630",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AKS",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14337306731022319987",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Website",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4845725367665386711",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AnalysisService",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "15262049920369619355",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventGridTopic",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "8587788003795197052",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventGridSub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "10245030163231357695",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-HDInsight",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4148807900916517761",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-RedisCache",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "11162686270804686271",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Relay",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12034064129389569943",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SignalR",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1258952290224408221",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-TrafficManager",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14406839303186969737",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-WebServerFarm",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "16476145808827386726",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLMI",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6740490991927038987",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Firewall",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "15666039493126820386",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DataFactory",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4163741391820284635",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CosmosDB",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "13676257550891861411",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CDNEndpoints",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4178641559513478267",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-AA",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "1156341612384573018",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PublicIP",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17355726206452215564",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LoadBalancer",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9505604242236053245",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-NetworkSecurityGroups",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "3667007167800952085",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-KeyVault",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "4754570240407878957",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-CognitiveServices",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "17161066125926295149",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DLAnalytics",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "799606415730500449",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-DataLakeStore",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7190329026003719874",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-EventHub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "7863441568604220429",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-iotHub",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14776611665411813535",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-TimeSeriesInsights",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "13829481514767845538",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LogicAppsWF",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "13219615071030113927",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-RecoveryVault",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "8335455503235185995",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SearchServices",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "556557897625195479",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ServiceBus",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "13474861194240039393",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLDBs",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "11770855159527432068",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-SQLElasticPools",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12839372394358070749",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-APIMgmt",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "9326162222375239059",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ApplicationGateway",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "14438058401616010269",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-Batch",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "3022223027831031324",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-MySQL",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "6479646090704390901",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-PostgreSQL",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "151897420237041241",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-LogicAppsISE",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            },
+            {
+              "policyDefinitionReferenceId": "12924249495396777819",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-MlWorkspace",
+              "parameters": {
+                "logAnalytics": {
+                  "value": "[parameters('logAnalytics')]"
+                }
+              }
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+        "ResourceName": "Deploy-Diag-LogAnalytics",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}
