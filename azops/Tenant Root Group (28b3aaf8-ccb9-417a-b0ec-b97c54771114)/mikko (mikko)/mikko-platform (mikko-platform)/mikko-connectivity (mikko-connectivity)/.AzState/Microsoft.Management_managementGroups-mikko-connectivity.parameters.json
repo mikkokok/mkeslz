@@ -9,8 +9,8 @@
         "Name": "mikko-connectivity",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "mikko-connectivity",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-21T10:58:53.6656694Z",
+        "UpdatedBy": "1d2e9c5b-e532-413c-9a8f-fd31ab1b36dd",
         "ParentId": "/providers/Microsoft.Management/managementGroups/mikko-platform",
         "ParentName": "mikko-platform",
         "ParentDisplayName": "mikko-platform",
@@ -22,14 +22,7 @@
             "DisplayName": "mikkokok",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }

@@ -9,8 +9,8 @@
         "Name": "mikko-landingzones",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "mikko-landingzones",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-21T10:58:20.8853477Z",
+        "UpdatedBy": "1d2e9c5b-e532-413c-9a8f-fd31ab1b36dd",
         "ParentId": "/providers/Microsoft.Management/managementGroups/mikko",
         "ParentName": "mikko",
         "ParentDisplayName": "mikko",
@@ -36,153 +36,7 @@
             "DisplayName": "mikko-sap",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [
-            {
-              "Identity": null,
-              "Location": "westeurope",
-              "Name": "Deny-IP-forwarding",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
-              "Properties": {
-                "Description": "Deny-IP-Forwarding",
-                "DisplayName": "Deny-IP-Forwarding",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
-              "ResourceName": "Deny-IP-forwarding",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            },
-            {
-              "Identity": null,
-              "Location": "westeurope",
-              "Name": "Deny-Storage-http",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
-              "Properties": {
-                "Description": "Enforce-Secure-Storage",
-                "DisplayName": "Enforce-Secure-Storage",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
-              "ResourceName": "Deny-Storage-http",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            },
-            {
-              "Identity": null,
-              "Location": "westeurope",
-              "Name": "Deny-Subnet-Without-Nsg",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
-              "Properties": {
-                "Description": "Deny-Subnet-Without-Nsg",
-                "DisplayName": "Deny-Subnet-Without-Nsg",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
-              "ResourceName": "Deny-Subnet-Without-Nsg",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            },
-            {
-              "Identity": {
-                "principalId": "fa147c8f-cc66-4f5f-99b8-58ea57324f7e",
-                "tenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
-                "type": "SystemAssigned"
-              },
-              "Location": "westeurope",
-              "Name": "Deploy-SQL-DB-Auditing",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
-              "Properties": {
-                "Description": "Deploy-SQL-Audit",
-                "DisplayName": "Deploy-SQL-Audit",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
-              "ResourceName": "Deploy-SQL-DB-Auditing",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            },
-            {
-              "Identity": {
-                "principalId": "47877346-d4f7-4962-b5b2-69cf88691aa7",
-                "tenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
-                "type": "SystemAssigned"
-              },
-              "Location": "westeurope",
-              "Name": "Deploy-VM-Backup",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
-              "Properties": {
-                "Description": "Deploy-VM-Backup",
-                "DisplayName": "Deploy-VM-Backup",
-                "NotScopes": null,
-                "Parameters": {},
-                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mikko/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
-              "ResourceName": "Deploy-VM-Backup",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            },
-            {
-              "Identity": {
-                "principalId": "92da9b7c-5863-45c1-a1a5-80075b29f91b",
-                "tenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
-                "type": "SystemAssigned"
-              },
-              "Location": "westeurope",
-              "Name": "Enforce-SQL-Encryption",
-              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
-              "Properties": {
-                "Description": "Deploy-SQL-Security",
-                "DisplayName": "Deploy-SQL-Security",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86a912f6-9a06-4e26-b447-11b16ba8659f",
-                "Scope": "/providers/Microsoft.Management/managementGroups/mikko-landingzones"
-              },
-              "ResourceId": "/providers/Microsoft.Management/managementGroups/mikko-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
-              "ResourceName": "Enforce-SQL-Encryption",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A0",
-                "tier": "Free"
-              }
-            }
-          ],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }
