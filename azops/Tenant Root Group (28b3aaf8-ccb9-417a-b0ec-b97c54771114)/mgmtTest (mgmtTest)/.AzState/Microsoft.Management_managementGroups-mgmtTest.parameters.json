@@ -9,19 +9,12 @@
         "Name": "mgmtTest",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "mgmtTest",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-01T09:06:15.892747Z",
+        "UpdatedBy": "86371873-2ca0-4785-8a72-41df22326edd",
         "ParentId": "/providers/Microsoft.Management/managementGroups/28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "ParentName": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "ParentDisplayName": "Tenant Root Group",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

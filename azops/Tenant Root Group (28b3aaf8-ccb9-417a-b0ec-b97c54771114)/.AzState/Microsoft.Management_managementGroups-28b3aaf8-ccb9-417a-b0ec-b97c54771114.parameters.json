@@ -9,8 +9,8 @@
         "Name": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "Tenant Root Group",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-21T10:43:43.5287804Z",
+        "UpdatedBy": "Tenant Backfill Job",
         "ParentId": null,
         "ParentName": null,
         "ParentDisplayName": null,
@@ -20,88 +20,7 @@
             "Id": "/providers/Microsoft.Management/managementGroups/mikko",
             "Name": "mikko",
             "DisplayName": "mikko",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/mikko-decomissioned",
-                "Name": "mikko-decomissioned",
-                "DisplayName": "mikko-decomissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/mikko-sandboxes",
-                "Name": "mikko-sandboxes",
-                "DisplayName": "mikko-sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/mikko-platform",
-                "Name": "mikko-platform",
-                "DisplayName": "mikko-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-connectivity",
-                    "Name": "mikko-connectivity",
-                    "DisplayName": "mikko-connectivity",
-                    "Children": [
-                      {
-                        "Type": "/subscriptions",
-                        "Id": "/subscriptions/efe11bb6-65b4-4772-93d4-fcd6796530b9",
-                        "Name": "efe11bb6-65b4-4772-93d4-fcd6796530b9",
-                        "DisplayName": "mikkokok",
-                        "Children": null
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-management",
-                    "Name": "mikko-management",
-                    "DisplayName": "mikko-management",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-identity",
-                    "Name": "mikko-identity",
-                    "DisplayName": "mikko-identity",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/mikko-landingzones",
-                "Name": "mikko-landingzones",
-                "DisplayName": "mikko-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-corp",
-                    "Name": "mikko-corp",
-                    "DisplayName": "mikko-corp",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-online",
-                    "Name": "mikko-online",
-                    "DisplayName": "mikko-online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/mikko-sap",
-                    "Name": "mikko-sap",
-                    "DisplayName": "mikko-sap",
-                    "Children": null
-                  }
-                ]
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
@@ -110,14 +29,7 @@
             "DisplayName": "mgmtTest",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }

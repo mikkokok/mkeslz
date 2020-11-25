@@ -9,19 +9,12 @@
         "Name": "mikko-sandboxes",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "mikko-sandboxes",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-21T10:58:18.9322425Z",
+        "UpdatedBy": "1d2e9c5b-e532-413c-9a8f-fd31ab1b36dd",
         "ParentId": "/providers/Microsoft.Management/managementGroups/mikko",
         "ParentName": "mikko",
         "ParentDisplayName": "mikko",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

@@ -9,8 +9,8 @@
         "Name": "mikko-platform",
         "TenantId": "28b3aaf8-ccb9-417a-b0ec-b97c54771114",
         "DisplayName": "mikko-platform",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-21T10:58:20.6322825Z",
+        "UpdatedBy": "1d2e9c5b-e532-413c-9a8f-fd31ab1b36dd",
         "ParentId": "/providers/Microsoft.Management/managementGroups/mikko",
         "ParentName": "mikko",
         "ParentDisplayName": "mikko",
@@ -20,15 +20,7 @@
             "Id": "/providers/Microsoft.Management/managementGroups/mikko-connectivity",
             "Name": "mikko-connectivity",
             "DisplayName": "mikko-connectivity",
-            "Children": [
-              {
-                "Type": "/subscriptions",
-                "Id": "/subscriptions/efe11bb6-65b4-4772-93d4-fcd6796530b9",
-                "Name": "efe11bb6-65b4-4772-93d4-fcd6796530b9",
-                "DisplayName": "mikkokok",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
@@ -44,14 +36,7 @@
             "DisplayName": "mikko-identity",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }
